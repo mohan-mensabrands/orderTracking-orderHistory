@@ -1,0 +1,249 @@
+#root {
+  /*   font-family: Overpass, sans-serif; */
+    font-family: Roboto;
+    background: #ffffff;
+    color: black;
+    max-width: 700px;
+    margin: 1rem auto;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0 20px;
+  }
+  .mensahide {
+    display:none;
+  }
+  @media only screen and (max-width: 600px) {
+    #root {
+      margin: 0;
+    }
+  }
+  
+  .mensaLoading {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mensa16800 {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  .mensa14400 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .mensa14700 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .mensa12400 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .mensa12500 {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .mensaGreyFont{
+    color: #9C9C9C;
+  }
+  .mensaDrakGreyFont{
+    color: #5C5C5C;
+  }
+  .mensaCompletedFont{
+    color: #07AE71;
+  }
+  
+  .mensaPageTitle {
+    padding: 20px 20px 0 0px;
+      font-size: 15px;
+      FONT-WEIGHT: 100;
+      -webkit-text-stroke-width: 0.8px;
+      line-height: 20.26px;
+      letter-spacing: .8px;
+      opacity: 0.9;
+  }
+  
+  /* product card */
+  
+  .mensaProdctTitle {
+    padding: 0 12px 4px 0;
+    text-overflow: ellipsis;
+    width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      max-height: 18px;
+  }
+  
+  .mensaProductSize-qty {
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+    flex-wrap: wrap;
+  }
+  
+  .mensaTitle {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .mensaProductCard {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    ;
+    margin-top: 5px;
+  }
+  
+  .mensaProductImageThumb {
+    height: 80px;
+  /*   width: 80px; */
+    /* border: 1px solid #F8F8F8; */
+    border-radius: 16px;
+    margin: 12px 20px 12px 12px;
+  }
+  
+  .mensaCardContent {
+    min-height: 104px;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .mensaProductCardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow:auto;
+    cursor: pointer;
+  }
+  
+  .mensaCard{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  .mensaDelStatus {
+    display: flex;
+  }
+  
+  .separator{
+    height: 8px;
+    border: none;
+    background: #F8F8F8;
+    margin:0;
+  }
+  @media only screen and (max-width: 600px) {
+    .separator{
+       position: absolute;
+      width: 100vw;
+      left: 0px;
+    }
+  }
+  
+  
+  
+  .mensaCancelledOrder {
+    align-items: center;
+  }
+  
+  .mensaOrderConfirmed {
+    color: #07AE71;
+    align-items: center;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .mensaCREATED{
+    color: #EE9B1F;
+    align-items: center;
+    position: relative;
+  }
+  
+  .mensaSHIPPED{
+    color: #EE9B1F;
+  }
+  
+  .mensaPROCESSING, .mensaPLACED, .mensaPlaced {
+    color: #E5781F;
+  }
+  .mensaDELIVERED{
+    color: #07AE71;
+  }
+  
+  .mensaPromiseDate{
+    margin-left: 15px;
+  }
+  .mensaCustomerName, .mensaDefaultAddressName {
+    text-transform: capitalize;
+  }
+  
+  .mensaAddressContent {
+    line-height: 17.72px;
+  }
+  
+  .mensaDefaultAddress {
+    padding-top: 2rem;
+  }
+  
+  .mensaNoOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 16px;
+  }
+  .mensaNoOrder>svg {
+    padding-bottom: 14px;
+    height: auto;
+    width: auto;
+  }
+  .mensaContinueShoppingBtn {
+    margin: 22px 0;
+    background: black;
+    width: 80vw;
+    max-width: 500px;
+    border-radius: 8px;
+    height: 50px;
+    color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mensaHref{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .mensaStatusValue {
+    text-transform: lowercase;
+  }
+  .mensaStatusValue:first-letter{
+    text-transform: uppercase;
+  }
+  .heading_logout{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logout_link{
+    border: 1px solid black;
+  }

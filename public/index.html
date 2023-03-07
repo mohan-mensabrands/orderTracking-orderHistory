@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="mensa-orders" style="display: none">
+      <div name="order 4299638931591">
+        <p name="orderId" style="display: none">4299638931591</p>
+        <p name="orderDate" style="display: none">2022-11-10 12:54:58 +0530</p>
+        <a
+          name="orderLink 4299638931591"
+          href="https://priyaasi.com/account/orders/96300383c0a955e5fd5d53c68a0d3f7b"
+        ></a>
+        <p name="ifCancelled">false</p>
+        <p name="ifDelivered">unfulfilled</p>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/BR-PR-20062_1_f16c256a-a74a-451c-9208-2ae36335b94c_120X90.jpg?v=1603454747"
+            />
+          </div>
+          <div name="orderTitle">
+            Oxidised Silver-Toned &amp; Black Beaded Bracelet For Women And
+            Girls
+          </div>
+          <div name="orderQty">Qty: 1</div>
+          <ul class="orderAttributes">
+            <li>Size: Adjustable</li>
+          </ul>
+
+          <div name="itemId">11123863715975</div>
+        </div>
+      </div>
+      <div name="order 4298502897799">
+        <p name="orderId" style="display: none">4298502897799</p>
+        <p name="orderDate" style="display: none">2022-11-09 13:10:59 +0530</p>
+        <a
+          name="orderLink 4298502897799"
+          href="https://priyaasi.com/account/orders/20dea06d9c8e1626d9f28bb0aa44bf9a"
+        ></a>
+
+        <p name="ifCancelled">true</p>
+        <p name="ifDelivered">unfulfilled</p>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/BR-PR-20062_1_f16c256a-a74a-451c-9208-2ae36335b94c_120X90.jpg?v=1603454747"
+            />
+          </div>
+          <div name="orderTitle">
+            Oxidised Silver-Toned &amp; Black Beaded Bracelet For Women And
+            Girls
+          </div>
+          <div name="orderQty">Qty: 1</div>
+          <ul class="orderAttributes">
+            <li>Size: Adjustable</li>
+          </ul>
+
+          <div name="itemId">11121333764231</div>
+        </div>
+      </div>
+      <div name="order 4293065080967">
+        <p name="orderId" style="display: none">4293065080967</p>
+        <p name="orderDate" style="display: none">2022-11-04 14:31:23 +0530</p>
+        <a
+          name="orderLink 4293065080967"
+          href="https://priyaasi.com/account/orders/6c16b47aedbf08a4d429af76b4623119"
+        ></a>
+
+        <p name="ifCancelled">true</p>
+        <p name="ifDelivered">unfulfilled</p>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/EAR-PR-50155_1_120X90.jpg?v=1597806972"
+            />
+          </div>
+          <div name="orderTitle">
+            Designer Rose Gold Plated American Diamond Stud Earring For Women
+            And Girls
+          </div>
+          <div name="orderQty">Qty: 1</div>
+          <ul class="orderAttributes">
+            <li>Size: One Size</li>
+          </ul>
+
+          <div name="itemId">11110144114823</div>
+        </div>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/BR-PR-20062_1_f16c256a-a74a-451c-9208-2ae36335b94c_120X90.jpg?v=1603454747"
+            />
+          </div>
+          <div name="orderTitle">
+            Oxidised Silver-Toned &amp; Black Beaded Bracelet For Women And
+            Girls
+          </div>
+          <div name="orderQty">Qty: 1</div>
+          <ul class="orderAttributes">
+            <li>Size: Adjustable</li>
+          </ul>
+
+          <div name="itemId">11110144147591</div>
+        </div>
+      </div>
+      <div name="order 4293063540871">
+        <p name="orderId" style="display: none">4293063540871</p>
+        <p name="orderDate" style="display: none">2022-11-04 14:27:36 +0530</p>
+        <a
+          name="orderLink 4293063540871"
+          href="https://priyaasi.com/account/orders/01fe032d4706e998c9e2a0657dc2c504"
+        ></a>
+
+        <p name="ifCancelled">true</p>
+        <p name="ifDelivered">unfulfilled</p>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/BR-PR-20134.CR_120X90.jpg?v=1602769445"
+            />
+          </div>
+          <div name="orderTitle">
+            Oxidized Silver-Plated Cuff Bracelet with floral pattern
+          </div>
+          <div name="orderQty">Qty: 2</div>
+          <div name="itemId">11110141296775</div>
+        </div>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/BA-PR-40140-2-6_1_9aa0088e-ef69-4ba7-a31b-7a55465e5214_120X90.jpg?v=1598180304"
+            />
+          </div>
+          <div name="orderTitle">
+            Set Of 2 Mehandi Polished Stones and Pearls Studded Bangles
+          </div>
+          <div name="orderQty">Qty: 1</div>
+          <ul class="orderAttributes">
+            <li>Size: 2.4</li>
+          </ul>
+
+          <div name="itemId">11110141329543</div>
+        </div>
+      </div>
+      <div name="order 4293062426759">
+        <p name="orderId" style="display: none">4293062426759</p>
+        <p name="orderDate" style="display: none">2022-11-04 14:24:44 +0530</p>
+        <a
+          name="orderLink 4293062426759"
+          href="https://priyaasi.com/account/orders/23895c5ffa63810dc342d75f8717586b"
+        ></a>
+
+        <p name="ifCancelled">true</p>
+        <p name="ifDelivered">unfulfilled</p>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/NL-PR-10489.M_a062c8e8-e886-4429-83a1-6b2598127f91_120X90.jpg?v=1659087051"
+            />
+          </div>
+          <div name="orderTitle">
+            Ghungroo Silver Plated Temple Jewellery Set
+          </div>
+          <div name="orderQty">Qty: 2</div>
+          <div name="itemId">11110139527303</div>
+        </div>
+      </div>
+      <div name="order 4282485047431">
+        <p name="orderId" style="display: none">4282485047431</p>
+        <p name="orderDate" style="display: none">2022-10-26 12:48:22 +0530</p>
+        <a
+          name="orderLink 4282485047431"
+          href="https://priyaasi.com/account/orders/002ca6d9bb0e4b0d9ae669504af7c14e"
+        ></a>
+
+        <p name="ifCancelled">true</p>
+        <p name="ifDelivered">unfulfilled</p>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/MGS-PR-10054.CR_120X90.jpg?v=1620379360"
+            />
+          </div>
+          <div name="orderTitle">
+            Gold-Plated Artificial Stone Studded Mangalsutra
+          </div>
+          <div name="orderQty">Qty: 1</div>
+          <div name="itemId">11087457812615</div>
+        </div>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/ANK-PR-10057.CR_86b29baf-a8ff-4186-b5cb-4e333ed36579_120X90.jpg?v=1614597933"
+            />
+          </div>
+          <div name="orderTitle">
+            Black Beads Silver Plated Traditional Anklets
+          </div>
+          <div name="orderQty">Qty: 2</div>
+          <ul class="orderAttributes">
+            <li>Size: One Size</li>
+            <li>Color: Black</li>
+          </ul>
+
+          <div name="itemId">11087457845383</div>
+        </div>
+      </div>
+      <div name="order 4282484523143">
+        <p name="orderId" style="display: none">4282484523143</p>
+        <p name="orderDate" style="display: none">2022-10-26 12:46:40 +0530</p>
+        <a
+          name="orderLink 4282484523143"
+          href="https://priyaasi.com/account/orders/bfc8740e2dafa53ccd635ec538aa571f"
+        ></a>
+
+        <p name="ifCancelled">true</p>
+        <p name="ifDelivered">unfulfilled</p>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/EAR-PR-50155_1_120X90.jpg?v=1597806972"
+            />
+          </div>
+          <div name="orderTitle">
+            Designer Rose Gold Plated American Diamond Stud Earring For Women
+            And Girls
+          </div>
+          <div name="orderQty">Qty: 2</div>
+          <ul class="orderAttributes">
+            <li>Size: One Size</li>
+          </ul>
+
+          <div name="itemId">11087456796807</div>
+        </div>
+      </div>
+      <div name="order 4282480066695">
+        <p name="orderId" style="display: none">4282480066695</p>
+        <p name="orderDate" style="display: none">2022-10-26 12:43:09 +0530</p>
+        <a
+          name="orderLink 4282480066695"
+          href="https://priyaasi.com/account/orders/fb3126a1d50a460ba17236742589b8ba"
+        ></a>
+
+        <p name="ifCancelled">true</p>
+        <p name="ifDelivered">unfulfilled</p>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/BA-PR-40069-2-6_1_e7986825-3768-4f28-b964-2b1e476e80f3_120X90.jpg?v=1597720426"
+            />
+          </div>
+          <div name="orderTitle">
+            Designer Stone Studded Gold Plated Maroon Colour Silk Threaded
+            Latest Stylish Traditional Bangles For Women And Girls Set Of 8
+          </div>
+          <div name="orderQty">Qty: 1</div>
+          <ul class="orderAttributes">
+            <li>Size: 2.4</li>
+          </ul>
+
+          <div name="itemId">11087451390087</div>
+        </div>
+      </div>
+      <div name="order 4276618723463">
+        <p name="orderId" style="display: none">4276618723463</p>
+        <p name="orderDate" style="display: none">2022-10-20 15:37:26 +0530</p>
+        <a
+          name="orderLink 4276618723463"
+          href="https://priyaasi.com/account/orders/fa2a691a727a3a2281985270f4b2d32c"
+        ></a>
+
+        <p name="ifCancelled">true</p>
+        <p name="ifDelivered">fulfilled</p>
+        <div name="orderLineItem">
+          <div name="orderImage ">
+            <img
+              src="//cdn.shopify.com/s/files/1/0329/7178/4327/products/BA-PR-40020-2.10.M_120X90.jpg?v=1584463738"
+            />
+          </div>
+          <div name="orderTitle">
+            Set of 2 Gold-Plated Stone-Studded Bangles
+          </div>
+          <div name="orderQty">Qty: 1</div>
+          <ul class="orderAttributes">
+            <li>Size: 2.1</li>
+          </ul>
+
+          <div name="itemId">11075053387911</div>
+        </div>
+      </div>
+      <div name="customerName">No Order</div>
+
+      <div name="customerAddress">
+        {"id":7043109978247,"customer_id":5774341406855,"first_name":"Do
+        Not","last_name":"Dispatch","company":"mensa","address1":"ban","address2":"do
+        not dispatch for testing
+        purpose","city":"Bengaluru","province":"Karnataka","country":"India","zip":"560102","phone":"+91
+        84331 48434","name":"Do Not
+        Dispatch","province_code":"KA","country_code":"IN","country_name":"India","default":true}
+      </div>
+      <div name="customerEmail">mohan.gupta+noorder@mensabrands.com</div>
+
+      <a name="addressEditLink" href="/account/addresses"> </a>
+    </div> -->
+    <div class="mensa-orders" style="display:none;"><div name="order 5006021492963">
+      <p name="orderId" style="display:none;">5006021492963</p>
+      <p name="orderName" style="display:none;">#DL14692</p>
+      <p name="orderDate" style="display:none;">2022-11-21 00:42:21 +0530</p>
+      <a name="orderLink 5006021492963" href="https://www.dennislingo.com/account/orders/c4155188c765d615773a8008f3582c49"></a>
+      <p name="ifCancelled">false</p>
+      <p name="ifDelivered">fulfilled</p><div name="orderLineItem">
+          <div name="orderImage "><img src="//cdn.shopify.com/s/files/1/0613/8304/9443/products/C503_D_20_281_29_5f20b26a-6038-447a-9213-0e447461c665_120X90.jpg?v=1663891126"></div>
+          <div name="orderTitle">The Noah Shirt (DARKBLUEOMBRE)</div>
+          <div name="orderQty">Qty: 1</div>
+            <ul class="orderAttributes">
+              <li>COLOR: DARKBLUEOMBRE</li><li>SIZE: M</li>
+            </ul>
+          
+          <div name="itemId">12619041669347</div>
+        </div></div>
+<div name="customerName">test mensa</div>
+
+  <div name="customerAddress">
+    {"id":7999677366499,"customer_id":6506643587299,"first_name":"test","last_name":"mensa","company":null,"address1":"do not dispatch","address2":"testing only","city":"bengaluru","province":"Karnataka","country":"India","zip":"560102","phone":"84331 48434","name":"test mensa","province_code":"KA","country_code":"IN","country_name":"India","default":true}
+  </div>
+  <div name="customerEmail">
+    mohan.gupta+noorder@mensabrands.com</div>
+
+<a name="addressEditLink" href="/account/addresses"></a>
+</div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+    </style>
+
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
