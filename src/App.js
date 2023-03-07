@@ -123,7 +123,9 @@ function App({ item, address }) {
         >
           MY ORDERS
         </div>
-        <a href="/account/logout" className="logout_link">Logout</a>
+        <a href="/account/logout" className="logout_link">
+          <button className="logout_button">Logout</button>
+        </a>
       </div>
       {!items || items.length === 0 ? <NoOrder /> : <></>}
       {items.map((item) => (
